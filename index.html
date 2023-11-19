@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylessheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="Slowscroll('№top')">
+        <span>360</span>
+    </div>
+    <div id="about"></div>
+    <a href="#" title="Vozmozhnosti" onclick="Slowscroll('#main')">Vozmozhnosti</a>
+    <a href="#" title="Overiew" onclick="Slowscroll('#overiew')">Overiew</a>
+    <a href="#" title="Contacts" onclick="Slowscroll('#contacts')">Contacts</a>
+    <a href="#" title="FAQ" onclick="Slowscroll('#faq')">Vozmozhnosti</a>
+</header>    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    function Slowscroll(id) {
+        $('body').animate({
+scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+</script>
+</body>
+</html>
